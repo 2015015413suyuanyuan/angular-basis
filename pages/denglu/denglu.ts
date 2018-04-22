@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angul
 import { ModalController } from 'ionic-angular';
 import {ZhucePage} from '../zhuce/zhuce'
 import { TabsPage } from '../../pages/tabs/tabs'
+import { FindpwdPage } from '../../pages/findpwd/findpwd'
 /**
  * Generated class for the DengluPage page.
  *
@@ -27,5 +28,9 @@ export class DengluPage {
   zhuce(){
     let profileModal = this.modalCtrl.create(ZhucePage);
     profileModal.present();
+  }
+  find(){
+    let profileModal = this.modalCtrl.create(FindpwdPage);
+    profileModal.present();    
   }
 }
